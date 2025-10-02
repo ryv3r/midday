@@ -1318,6 +1318,7 @@ export const teams = pgTable(
     inboxForwarding: boolean("inbox_forwarding").default(true),
     baseCurrency: text("base_currency"),
     countryCode: text("country_code"),
+    fiscalYearStartMonth: smallint("fiscal_year_start_month"),
     documentClassification: boolean("document_classification").default(false),
     flags: text().array(),
     canceledAt: timestamp("canceled_at", {
